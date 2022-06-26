@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#to infinity and beyon
+while :
+do
+        echo "$$" > /var/run/myscript.pid
+        echo "To infinity and beyond"
+        sleep 2
+        trap 'echo "I hate the kill command"; rm /var/run/myscript.pid; exit' 15
+        trap 'echo "Y U no love me?!"' 2
+        trap 'rm /var/run/myscript.pid; exit' 3
+done

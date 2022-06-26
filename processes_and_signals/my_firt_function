@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+my_function () {
+   	 
+   echo 'my first program in bash script'
+ return 0  
+}
+my_function
+
