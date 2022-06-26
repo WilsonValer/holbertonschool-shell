@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#we are perfomrs read and cut
+
+while read -r line
+do
+  echo "$line" | cut -d ":" -f1,3,6
+done 

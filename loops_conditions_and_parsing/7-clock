@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# we are building a bash about clock
+HORA=0
+while [ $HORA -le 12 ]
+ do
+    echo "Hour: $HORA"
+      MINUTO=1
+      while [ $MINUTO -le 59 ]
+      do
+        echo "$MINUTO"
+        
+    MINUTO=$((MINUTO + 1))
+   done
+      HORA=$((HORA + 1))
+
+done
